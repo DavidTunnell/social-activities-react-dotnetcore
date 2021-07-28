@@ -6,6 +6,9 @@
 # Custom
 .vscode
 .vs
+## App settings file has private API keys so exclude
+API/appsettings.json
+appsettings.json
 
 # User-specific files
 *.rsuser
