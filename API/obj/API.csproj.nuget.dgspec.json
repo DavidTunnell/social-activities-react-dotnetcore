@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Software Projects\\Reactivities\\Reactivities\\API\\API.csproj": {}
+    "D:\\Software Projects\\Reactivities\\Reactivities\\api\\API.csproj": {}
   },
   "projects": {
-    "D:\\Software Projects\\Reactivities\\Reactivities\\API\\API.csproj": {
+    "D:\\Software Projects\\Reactivities\\Reactivities\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software Projects\\Reactivities\\Reactivities\\API\\API.csproj",
+        "projectUniqueName": "D:\\Software Projects\\Reactivities\\Reactivities\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Software Projects\\Reactivities\\Reactivities\\API\\API.csproj",
+        "projectPath": "D:\\Software Projects\\Reactivities\\Reactivities\\api\\API.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "D:\\Software Projects\\Reactivities\\Reactivities\\API\\obj\\",
+        "outputPath": "D:\\Software Projects\\Reactivities\\Reactivities\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,12 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -225,6 +231,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
