@@ -4,6 +4,7 @@ import './App.css';
 import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Header, List } from 'semantic-ui-react';
 
 function App() {
 //use state react hook - allows state to be stored inside component
@@ -17,18 +18,16 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <ul>
+    <div>
+      <Header as='h2' icon='users' content='Reactivities' /> 
+        <List>          
           {activities.map((activity: any) => (
             //a key is always needed when looping HTML elements in react
-            <li key={activity.id}>
+            <List.Item key={activity.id}>
               {activity.title}
-            </li>
+            </List.Item>
           ))}
-        </ul>
-      </header>
+        </List>
     </div>
   );
 }
