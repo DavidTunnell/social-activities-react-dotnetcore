@@ -23,6 +23,7 @@ namespace Application.Activities
             //handler handles requests
             public async Task<List<Activity>> Handle(Query request, CancellationToken cancellationToken)
             {
+                //the cancelation token being passed in allows the cancelation of a long running request
                 return await _context.Activities.ToListAsync();
             }
         }
